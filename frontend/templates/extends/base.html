@@ -1,0 +1,17 @@
+{% import "partials/head.html" as head %}
+
+<!DOCTYPE html>
+	{{ head.render(pageName) }}
+<body>
+	<div class="page">
+        {% block header %}
+
+        {% endblock %}
+
+		{% block content %}
+
+		{% endblock %}
+
+		{% include "partials/footer.html" %}
+  	</div>
+</html>

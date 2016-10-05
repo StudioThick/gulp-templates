@@ -1,0 +1,20 @@
+{
+  "name": "opine-templates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "homepage": "https://github.com/studiothick/opine-templates#readme",
+  "dependencies": {
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-prettify": "^0.5.0"
+  },
+  "peerDependencies": {
+    "gulp-opine": ">=0.7.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {}
+}
