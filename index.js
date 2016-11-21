@@ -8,11 +8,12 @@ var sources = module.getSources();
 var base = opine.getConfig('base.source', 'frontend');
 var dest = module.getDest();
 var path = module.getConfig('path', base + '/templates');
+var watchPath = opine.getConfig('templates.watchPath', path + '/**/*');
 
 var debug = module.getConfig('debug', true);
 
 module.addBuild();
-module.addWatch(sources);
+module.addWatch(watchPath);
 
 module.task(function() {
     return gulp
